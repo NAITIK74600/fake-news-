@@ -11,6 +11,10 @@ TRAIN_DATA_FILE = PROCESSED_DATA_DIR / "train.csv"
 TEST_DATA_FILE = PROCESSED_DATA_DIR / "test.csv"
 MODEL_FILE = ARTIFACTS_DIR / "model_pipeline.joblib"
 METRICS_FILE = ARTIFACTS_DIR / "metrics.json"
+MODEL_COMPARISON_FILE = ARTIFACTS_DIR / "model_comparison.csv"
+TRAINING_SUMMARY_FILE = ARTIFACTS_DIR / "training_summary.json"
+FEATURE_IMPORTANCE_FILE = ARTIFACTS_DIR / "feature_importance.json"
 
 RANDOM_STATE = 42
 TEST_SIZE = 0.2
+CV_FOLDS = 5

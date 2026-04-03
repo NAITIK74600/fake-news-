@@ -140,6 +140,27 @@ Input CSV must contain a `text` column.
 pytest
 ```
 
+### Prediction Testing File With REAL/FAKE Percent Results
+
+Input file:
+- `data/raw/testing_samples.csv`
+
+Run:
+
+```bash
+python scripts/test_with_results.py
+```
+
+Output file:
+- `artifacts/testing_results.csv`
+
+Output columns include:
+- `result_type` (`REAL` or `FAKE`)
+- `fake_percent`
+- `real_percent`
+
+`fake_percent` and `real_percent` always sum to `100`.
+
 ## 6) How to Scale This Project Further
 
 - Replace sample dataset with larger benchmark datasets (LIAR, FakeNewsNet, ISOT)
